@@ -2,18 +2,39 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <title>비틀비틀 소개</title>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .full-width {
+      width: 100%;
+      display: block;
+    }
+
+    img.full-width {
+      height: auto;
+    }
+
+    iframe.full-width {
+      aspect-ratio: 16 / 9;
+      border: none;
+    }
+
     .link-box {
       display: block;
       width: 100%;
-      margin: 10px auto;
-      padding: 20px;
+      padding: 12px 0;
       text-align: center;
       border: 2px solid green;
       text-decoration: none;
       color: black;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 16px;
+      line-height: 1.5;
       transition: background-color 0.3s;
     }
 
@@ -23,28 +44,22 @@
   </style>
 </head>
 <body>
-  <img src="https://imgur.com/H4LUQP0.jpg" width="100%" style="display: block; margin: 0 auto;">
 
+  <!-- 상단 이미지 -->
+  <img src="https://imgur.com/H4LUQP0.jpg" alt="비틀비틀 메인 이미지" class="full-width">
 
-<style>
-    iframe { 
-      display: block; 
-      margin: auto; 
-      width: 100%; 
-      aspect-ratio: 16 / 9; 
-      border: none;
-    }
-  </style>
-
+  <!-- 구글 드라이브 동영상 -->
   <iframe 
     src="https://drive.google.com/file/d/1hbioy3Jq64Np3k5X5Iq0gvz2V2OX2ioz/preview" 
-    allow="autoplay">
+    allow="autoplay"
+    class="full-width">
   </iframe>
 
-
+  <!-- 매장 및 인스타 링크 -->
   <a href="https://naver.me/xbA5vRaT" class="link-box" target="_blank">서순라점</a>
   <a href="https://naver.me/IgJGiHh2" class="link-box" target="_blank">연남점</a>
   <a href="https://naver.me/F0zW7UIU" class="link-box" target="_blank">만리점</a>
   <a href="https://www.instagram.com/bittlebittle_" class="link-box" target="_blank">비틀비틀 인스타그램</a>
+
 </body>
 </html>
